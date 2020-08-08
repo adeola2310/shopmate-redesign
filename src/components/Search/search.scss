@@ -1,0 +1,14 @@
+@import "../../assets/scss/_variable.scss";
+
+
+.searchbar {
+width: 35%;
+  border: none;
+  padding: 15px 15px;
+  outline: none;
+  border-radius: 100px;
+}
+
+input::placeholder{
+  color: $light-gray;
+}

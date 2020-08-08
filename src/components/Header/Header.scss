@@ -1,0 +1,17 @@
+@import "../../assets/scss/variable";
+@import "../../assets/scss/base";
+
+
+.header{
+  background-color: $primary-color;
+  color: $white;
+  width: 100vw;
+  height: fit-content;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+  }
+}
