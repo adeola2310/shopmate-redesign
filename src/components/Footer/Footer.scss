@@ -10,10 +10,19 @@
     padding: 5rem 9rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    .wear{
+    .wears{
       display: flex;
       flex-direction: column;
       margin: auto;
+      p{
+        margin: 15px;
+      }
     }
+
+  }
+  .foot{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
   }
 }

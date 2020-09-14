@@ -11,7 +11,7 @@ const productsReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 products: action.payload.data
-            };
+            }
 
         default:
             return state;

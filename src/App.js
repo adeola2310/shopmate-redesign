@@ -5,20 +5,29 @@ import './App.scss';
 import Home from "./Pages/Home/Home";
 import notFound from "./Pages/404/notFound";
 import Layout from "./components/Layout/Layout";
+import ProductDetails from "./Pages/PoductDetails/ProductDetails";
+import Cart from "./Pages/Cart/Cart";
+import { Provider } from "react-redux";
+import {store} from "./redux/store";
 
 function App() {
   return (
-      <BrowserRouter>
-            <Layout>
-                <Switch>
+      <Provider store={store}>
+          <BrowserRouter>
+              <Layout>
+                  <Switch>
 
-                <Route path="/" exact  component={Home}/>
-                </Switch>
-                <Route path="/not-found" exact component={notFound}/>
+                      <Route path="/" exact  component={Home}/>
+                      <Route path="/cart" exact  component={Cart}/>
+                      <Route path="/:id" exact component={ProductDetails}/>
+                  </Switch>
+                  <Route path="/not-found" exact component={notFound}/>
 
-            </Layout>
+              </Layout>
 
-      </BrowserRouter>
+          </BrowserRouter>
+      </Provider>
+
   );
 }
 

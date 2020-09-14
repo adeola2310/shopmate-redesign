@@ -1,5 +1,5 @@
 const constants = {
-    API_BASE_URL: "https://backendapi.turing.com"
+    API_BASE_URL: `https://backendapi.turing.com`
 }
 
 export default constants;

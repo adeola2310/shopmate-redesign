@@ -1,15 +1,17 @@
 import React from "react";
 import "./ProductCard.scss";
-import image from "../../assets/images/prod.jpg";
+import defaultImage from "../../assets/images/prod.jpg";
 
-const productCard = ()=>{
+const productCard = ({image, price, name})=>{
 
     return (
         <div className="cards">
-            <img src={image} className="image"/>
+            <img
+                src={image || defaultImage}
+                className="image"/>
             <div className="cards__details">
-                <h4>MEN sneaker</h4>
-                <h5>N50;00</h5>
+                <h4 className="name">{name}</h4>
+                <h4>${price}</h4>
                 <button className="cart">Add to cart</button>
             </div>
         </div>

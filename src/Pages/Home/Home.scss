@@ -5,6 +5,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  //position: fixed;
 
   &__category{
 
@@ -38,7 +39,7 @@ background-color: #f2f2f2;
     &--cards{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 20px;
+      grid-column-gap: 30px;
       grid-row-gap: 25px;
       padding: 30px 66px;
     }
@@ -72,5 +73,75 @@ display: flex;
 
     }
 
+  }
+}
+
+.pagination > li {
+  display: inline-block;
+  padding-left: 0;
+}
+.pagination > li {
+  list-style: none;
+  border: 0.9px solid;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #2c689c;
+  background-color: #fff;
+  //border: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+.pagination>li.active>a {
+  color: #fff;
+  background-color: $primary-color;
+  //border-color: $primary-color;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.pagination > li > a:hover {
+  background-color:  $primary-color;
+  color: white;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  padding: 0px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  display: none!important;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-bottom-right-radius: 4px;
+  margin-right: 0;
+  padding: 0px!important;
+  border-top-right-radius: 4px;
+  display: none!important;
+}
+
+
+@media screen and (max-width: 600px){
+  .container{
+    margin-top: 50px;
+
+    &__category{
+      display: none;
+    }
+    &__products{
+      background-color: #f2f2f2;
+      width: 100%;
+      margin-right: 0;
+      &--cards{
+        display: grid;
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
 }

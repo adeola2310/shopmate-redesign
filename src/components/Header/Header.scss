@@ -1,17 +1,52 @@
 @import "../../assets/scss/variable";
 @import "../../assets/scss/base";
 
+//a{
+//  color: white;
+//}
 
 .header{
   background-color: $primary-color;
   color: $white;
   width: 100vw;
   height: fit-content;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
 
   &__content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 25px;
+  }
+}
+
+
+
+.searchbar {
+  width: 35%;
+  border: none;
+  padding: 15px 15px;
+  outline: none;
+  border-radius: 100px;
+}
+
+input::placeholder{
+  color: $light-gray;
+}
+
+
+@media screen and (max-width: 600px){
+  .header{
+    width: 100vw;
+h2{
+  font-size: 1rem;
+}
+  }
+
+
+  .searchbar{
+    display: none;
+
+
   }
 }

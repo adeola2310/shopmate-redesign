@@ -1,9 +1,12 @@
 @import "../../assets/scss/variable";
 
-
+a{
+  text-decoration: none;
+  color: $dark;
+}
 .cards{
 background-color: $white;
-  border-radius: 3px;
+  border-radius: 5px;
 
   .image{
     width: 100%;
@@ -14,7 +17,29 @@ background-color: $white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
+    //margin: 30px;
 
+
+    h4{
+      margin: 15px;
+    }
+    h4 > .name{
+      text-transform: capitalize;
+      font-size: 2rem;
+
+    }
+    .cart{
+      background-color: $primary-color;
+      color: $white;
+      outline: none;
+      border: none;
+      border-radius: 100px;
+      padding: 10px 30px;
+      cursor: pointer;
+    }
   }
+}
+
+@media screen and (max-width: 600px){
+
 }

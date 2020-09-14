@@ -30,7 +30,9 @@ return(
                     <p>Men</p>
             </div>
     </div>
-        </div>
+        <p className="foot">Copyright {new Date().getFullYear()}</p>
+
+    </div>
 )
 }
 

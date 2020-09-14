@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "./search.scss"
 
 
 const Search = ()=>{
+
+
+
+
+
     return(
         <>
             <input
